@@ -1,0 +1,8 @@
+# すべてのファイル・フォルダをGit管理から除外
+*
+
+# ただし、以下のファイルはGit管理に含める
+!.gitignore
+!/portfolio/index.html
+!/portfolio/style.css
+!/portfolio/script.js
