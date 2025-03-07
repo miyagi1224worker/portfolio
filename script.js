@@ -53,7 +53,7 @@ sidebarprojectsLink.addEventListener('click', function (event) {
 });
     // メニュー以外をクリックしたら閉じる
     document.addEventListener('click', (event) => {
-        if (!sidebarProjectsLink.contains(event.target) && !sidebarProjectsMenu.contains(event.target)) {
-            sidebarProjectsMenu.style.display = 'none';
+        if (!sidebarprojectsLink.contains(event.target) && !sidebarprojectsMenu.contains(event.target)) {
+            sidebarprojectsMenu.style.display = 'none';
         }
     });

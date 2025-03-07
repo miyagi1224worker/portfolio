@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>miyagi.Portfolio</title>
+    <link rel="stylesheet" href="project.css" />
+    <script src="project.js" defer></script>
+  </head>
+  <body>
+    <div id="top"></div>
+    <header>
+      <h1>作成プログラム:リストデータ回収プログラム</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">ホームへ</a></li>
+          <li><a href="#overview">概要と作成経緯</a></li>
+          <li><a href="#coding">実際のコード</a></li>
+          <li><a href="#checkpoint">意識したポイント</a></li>
+          <li><a href="#contact">実装結果</a></li>
+          <li><a href="#consideration">考察</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="menu-toggle">☰</div>
+    <div id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">ホームへ</a></li>
+          <li><a href="#overview">概要と作成経緯</a></li>
+          <li><a href="#coding">実際のコード</a></li>
+          <li><a href="#checkpoint">意識したポイント</a></li>
+          <li><a href="#result">実装結果</a></li>
+          <li><a href="#consideration">考察</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="main-content">
+      <section id="overview">
+        <h2>概要</h2>
+        <p>
+          半自動データチェックプログラムでチェック修正を完了したデータを納品先の別スプレッドシートにコピーし納品するためのプログラムです。<br />
+          納品先のシート名に法則性がありデータの納品先がバラバラであっても納品可能だと閃いたため作成に着手しました。
+        </p>
+        <h3>作成経緯</h3>
+        <p>
+          作成当時は納品先のシートが少なくすぐわかる状態であり自動化の必要性は薄かったものの、<br />
+          長期的に利用するならあることで損はしないだろうと思い立ちました。<br />
+          また当時の勤務先ではスキルアップの時間が存在しており様々な処理を行うプログラムを作成し理解度を上げることで、<br />
+          スキルアップに繋げようという思いもありました。
+        </p>
+      </section>
+      <section id="#coding">
+        <h2>実際のコード</h2>
+        <figure>
+          <figcaption id="coding">実際のコード</figcaption>
+          <img src="project2.png" alt="実際のコード" />
+        </figure>
+      </section>
+      <section id="checkpoint">
+        <h2>意識したポイント</h2>
+        <p>
+          我ながら見直してみて複雑だと感じますが、意識したポイントとしては、
+          <ul>
+            <li>シートを跨ぐ処理を行うプログラムに慣れる</li>
+            <li>パスワードを設定して起動できる使用者を制限する</li>
+            <li>変化する納品先と納品物の規則性に着目し使用できるコードにする</li>
+            <li>プログラムを利用する際に複雑な操作を一切必要としないよう全て裏で処理を行う</li>
+          </ul>
+          の4点となります。変化する納品先を特定するための下準備の演算、<br>
+          また使用した数字をアルファベットに変更しセル座標とすることで貼り付け範囲を強引に設定するなど、<br>
+          見直してみるとおそらく現在ならもっと容易な処理もしくは可読性の高い処理に変更することが(AIのおかげで)可能だと考えていますが、<br>
+          後述する理由がありこのまま作成終了となりました。
+        </p>
+      </section>
+      <section id="result">
+        <h2>実装結果</h2>
+        <p>
+          動作は問題なく、一時的に納品先の規則性がずれて機能不全になることもありましたが、<br>
+          検索して特定する方式に変えたため現在も使用可能な状態になっています。ですが、<br>
+          A型事業所ということでスキルを身に付けながらステップアップの就職を重視する企業にとって、過ぎた便利化はスキルを落とす側面が存在するため、<br>
+          スキルが問題ないと見なされた人にのみ教える内密なプログラムとなり、そのままパートナーさん方の記憶から消滅したため、<br>
+          現在は私が本業務を行う際に使用する際にとどまるという作成時間に対してもったいない結果という悲しみを背負ったプログラムとなりました。
+        </p>
+      </section>
+      <section id="consideration">
+        <h2>考察</h2>
+        <p>
+          結果としてほとんど使用されないプログラムになってしまいもったいないという気持ちもありましたが、<br>
+          応用のスキルアップを行うという目的もあったため、応用力を磨くという意味では実を結んだプログラムだと考えています。<br>
+          これ以降のプログラムについてはAIも活用して作成を行うようになったため、完全独学で作成を行った最後のプログラムにもなっています。
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

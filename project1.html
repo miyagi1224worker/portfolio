@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>miyagi.Portfolio</title>
+    <link rel="stylesheet" href="project.css" />
+    <script src="project.js" defer></script>
+  </head>
+  <body>
+    <div id="top"></div>
+    <header>
+      <h1>作成プログラム:半自動データチェックプログラム</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">ホームへ</a></li>
+          <li><a href="#overview">概要と作成経緯</a></li>
+          <li><a href="#coding">実際のコード</a></li>
+          <li><a href="#checkpoint">意識したポイント</a></li>
+          <li><a href="#contact">実装結果</a></li>
+          <li><a href="#consideration">考察</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="menu-toggle">☰</div>
+    <div id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">ホームへ</a></li>
+          <li><a href="#overview">概要と作成経緯</a></li>
+          <li><a href="#coding">実際のコード</a></li>
+          <li><a href="#coding1">当初のコード</a></li>
+          <li><a href="#coding2">現在のコード</a></li>
+          <li><a href="#checkpoint">意識したポイント</a></li>
+          <li><a href="#result">実装結果</a></li>
+          <li><a href="#consideration">考察</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="main-content">
+      <section id="overview">
+        <h2>概要</h2>
+        <p>
+          対象データと一致する既存データをデータベースから検索し、その後データを比較し相違点をハイライト表示することで<br />
+          チェックが必要な部分を可視化し作業量を減らすとともに、チェックが完了した新規データ、<br />
+          要更新データを半自動で回収・更新しチェック精度を上げる事ができます。
+        </p>
+        <h3>作成経緯</h3>
+        <p>
+          入社後業務に慣れてきて効率が高まってきた時に、<br />
+          「データ回収班の人手が不足しているためそちらをお願いしたいです。」と言われ回収班に入った所、<br />
+          作成する際の手順とほぼ同じ方法でチェックを行っていて大変非効率的だと感じ、対処方法も人海戦術という言葉に詰まる状態であったため<br />
+          どうにかして少ない人数でも効率を上げるべきだと判断し未経験ではあったもののパートナーさん方の許可をもらい作成にしました。
+        </p>
+      </section>
+      <section id="coding">
+        <h2>実際のコード</h2>
+        <p>
+          <a href="#coding1">作成当初のコード</a>
+          <a href="#coding2">現在のコード</a>
+        </p>
+        <figure>
+          <figcaption id="coding1">作成当初のコード</figcaption>
+          <img src="project1.png" alt="当初のコード" />
+        </figure>
+        <p id="coding2">現在のコード</p>
+        <p>
+          各リンク<br />
+          <a href="#coding2-1">並列処理部分</a><br />
+          <a href="#coding2-2">メイン処理部分</a><br />
+          <a href="#coding2-3">サブ処理部分</a>
+        </p>
+        <figure>
+          <figcaption id="coding2-1">並列処理部分</figcaption>
+          <img src="HTML2.png" alt="並列処理部分" />
+        </figure>
+        <figure>
+          <figcaption id="coding2-2">メイン処理部分</figcaption>
+          <img src="newproject2.png" alt="メイン処理部分" />
+        </figure>
+        <figure>
+          <figcaption id="coding2-3">サブ処理部分</figcaption>
+          <img src="subproject.png" alt="サブ処理部分" />
+        </figure>
+      </section>
+      <section id="checkpoint">
+        <h2>意識したポイント</h2>
+        <p>
+          作成当初はプログラミング言語の基礎知識すらなかったため、
+          まずは効率化ではなく「チェック作業を代わりに行ってくれるもの」という意識で完成させました。
+          完成と動作確認を終わった時点で既に効率、必要労力の削減という目標は少なからず達成していたものの、
+          あまりの課題の多さにより急いで改善を進めました。主に行った改善は以下の通りです。
+          <ul>
+            <li>連続処理から並列処理への移行(同時処理件数:1件⇒50件)</li>
+            <li>データの整形精度の向上(おもにゼロ幅スペースの削除や数字の半角統一等)</li>
+            <li>新規データの追加や既存情報の更新を行える機能の追加</li>
+            <li>チェック対象のデータ破損の検出機能の追加</li>
+          </ul>
+        </p>
+      </section>
+      <section id="result">
+        <h2>実装結果</h2>
+        <p>
+          初実装時点で手動チェックよりも1.5倍ほど効率が良かったものの、<br>
+          当時は不具合も多くベースデータもなかったため補助的ツールとなっていましたが、<br>
+          最終的には当時の課題を全て解決し効率は手動チェック当時と比べ数十倍の効率と必要労力の削減の両立を実現。<br>
+          現在も無くてはならないツールとなっています。
+        </p>
+      </section>
+      <section id="consideration">
+        <h2>考察</h2>
+        <p>
+          データの整形や個別データの収集、また各データの欠落等のケースもあるため各データを配列として一括取得することを避けましたが、<br>
+          こちらをより工夫すれば更なる処理速度の向上が見込めそうだと感じました。<br>
+          その点も含め名残惜しさはあるもののツールの使用頻度の減少や対象業務の停止等の理由が重なり、<br>
+          これ以上の調整は不要だと考え改善作業を切り上げた形となりました。
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
