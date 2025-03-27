@@ -21,7 +21,7 @@ header {
 #projects-menu1 {
     display: none; /* 初期状態では非表示 */
     position: absolute;
-    top: 18%; /* ボタンの真下に配置 */
+    top: 20%; /* ボタンの真下に配置 */
     left: 50%; /* 横幅の50%の位置に配置 */
     transform: translateX(-50%); /* 左に半分ずらして中央に配置 */
     z-index: 2;
