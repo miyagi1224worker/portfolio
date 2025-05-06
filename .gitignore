@@ -3,6 +3,8 @@
 
 # ただし、以下のファイルはGit管理に含める
 !.gitignore
-!/portfolio/index.html
-!/portfolio/style.css
-!/portfolio/script.js
+!/portfolio/
+#以下のファイルはバックアップ用のためどのディレクトリにあっても除外対象とする。
+**/portfolioC/
+**/プロジェクト詳細テンプレ.txt
+**/portfolioC/.gitignore
