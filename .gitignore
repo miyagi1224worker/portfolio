@@ -6,5 +6,5 @@
 !/portfolio/
 #以下のファイルはバックアップ用のためどのディレクトリにあっても除外対象とする。
 **/portfolioC/
-**/プロジェクト詳細テンプレ.txt
+**/各プロジェクト詳細テンプレHTML.txt
 **/portfolioC/.gitignore
