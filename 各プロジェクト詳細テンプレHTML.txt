@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>miyagi.Portfolio</title>
+    <link rel="stylesheet" href="project.css" />
+    <script src="project.js" defer></script>
+  </head>
+  <body>
+    <div id="top"></div>
+    <header>
+      <h1>作成プログラム:○○</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">ホームへ</a></li>
+          <li><a href="#overview">概要と作成経緯</a></li>
+          <li><a href="#coding">実際のコード</a></li>
+          <li><a href="#checkpoint">意識したポイント</a></li>
+          <li><a href="#contact">実装結果</a></li>
+          <li><a href="#consideration">考察</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="menu-toggle">☰</div>
+    <div id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">ホームへ</a></li>
+          <li><a href="#overview">概要と作成経緯</a></li>
+          <li><a href="#coding">実際のコード</a></li>
+          <li><a href="#checkpoint">意識したポイント</a></li>
+          <li><a href="#result">実装結果</a></li>
+          <li><a href="#consideration">考察</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="main-content">
+      <section id="overview">
+        <h2>概要</h2>
+        <p></p>
+        <h3>作成経緯</h3>
+        <p></p>
+      </section>
+      <section id="#coding">
+        <h2>実際のコード</h2>
+        <p></p>
+      </section>
+      <section id="checkpoint">
+        <h2>意識したポイント</h2>
+        <p></p>
+      </section>
+      <section id="result">
+        <h2>実装結果</h2>
+        <p></p>
+      </section>
+      <section id="consideration">
+        <h2>考察</h2>
+        <p></p>
+      </section>
+    </div>
+  </body>
+</html>
